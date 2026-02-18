@@ -55,12 +55,12 @@
                 <div class="card-body">
                     <fieldset class="fieldset">
                         <label class="label text-neutral font-bold">Mobile Number</label>
-                        <input maxlength="11" type="tel" inputmode="numeric" pattern="[0-9]{11}"
+                        <input id="phone-number" maxlength="11" type="tel" inputmode="numeric" pattern="[0-9]{11}"
                             oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
                             class="input rounded-full bg-base-200" placeholder="Enter Your Number" />
                         <br>
                         <label class="label text-neutral font-bold">4 Digit Pin</label>
-                        <input maxlength="4" pattern="[0-9]{4}" oninput="this.value=this.value.replace(/[^0-9]/g, '')"
+                        <input id="input-pin" maxlength="4" pattern="[0-9]{4}" oninput="this.value=this.value.replace(/[^0-9]/g, '')"
                             type="password" inputmode="numeric" required class="input rounded-full bg-base-200"
                             placeholder="Enter 4 Digit Pin" />
                         <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
