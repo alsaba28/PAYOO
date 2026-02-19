@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section class="form w-11/12 mx-auto py-5 space-y-5">
+    <section class="form w-11/12 mx-auto py-5 space-y-5 hidden">
         <section id="latest-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold mb-3">Latest Payment</h1>
             <div class="space-y-5">
@@ -274,16 +274,15 @@
         </section>
     </section>
 
-    <section class="form w-11/12 mx-auto py-5 space-y-5 hidden">
+    <section class="form w-11/12 mx-auto py-5 space-y-5 ">
         <section id="get-bonus-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold">Get Bonus</h1>
-
             <div class="log-in-form pt-5">
                 <div class="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-xl rounded-2xl">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="label text-neutral font-bold">Enter Bonus Coupon</label>
-                            <input id="cupon-code" maxlength="6" maxlength="6" type="text" required
+                            <input id="coupon-code" maxlength="6" maxlength="6" type="text" required
                                 class="input rounded-full bg-base-200 uppercase" placeholder="Enter your coupon" />
                             <button id="get-bonus-btn" class="btn btn-primary mt-4 rounded-full">
                                 Get Bonus
@@ -330,7 +329,7 @@
         </section>
     </section>
 
-    <section class="form w-11/12 mx-auto py-5 space-y-5">
+    <section class="form w-11/12 mx-auto py-5 space-y-5 hidden">
         <section id="transaction-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold mb-3">Transaction History</h1>
             <div class="space-y-5">
@@ -397,6 +396,7 @@
     <script src="./script/latest_history.js"></script>
     <script src="./script/addmoney.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/bonus.js"></script>
     <script src="./script/transaction.js"></script>
 </body>
 

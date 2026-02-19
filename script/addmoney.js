@@ -14,7 +14,6 @@ document.getElementById("addmoney-btn").addEventListener("click", function () {
   const addMoneyAmount = addMoneyInput.value;
   const totalBalance = document.getElementById("balance-amount");
   const balance = totalBalance.innerText;
-
   const newBalance = Number(balance) + Number(addMoneyAmount);
 
   const addMoneyPin = getValueFromInput("addmoney-pin");
