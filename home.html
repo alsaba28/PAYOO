@@ -7,7 +7,7 @@
 
     <!-- Title -->
 
-    <title>Payoo | Log In</title>
+    <title>Payoo | Home</title>
 
     <!-- Favicon -->
 
@@ -241,7 +241,7 @@
         </section>
     </section>
 
-    <section class="form w-11/12 mx-auto py-5 space-y-5">
+    <section class="form w-11/12 mx-auto py-5 space-y-5 hidden">
         <section id="transfer-money-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold">Transfer Money</h1>
 
@@ -257,7 +257,7 @@
                             <label class="label text-neutral font-bold">Amount</label>
                             <input id="transfer-amount" type="tel" inputmode="numeric" pattern="[0-9]"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
-                                class="input rounded-full bg-base-200" placeholder="Enter amount to withdraw" />
+                                class="input rounded-full bg-base-200" placeholder="Enter amount to Transfer" />
                             <br>
                             <label class="label text-neutral font-bold">Pin Number</label>
                             <input id="transfer-pin" maxlength="4" pattern="[0-9]{4}"
@@ -294,7 +294,7 @@
         </section>
     </section>
 
-    <section class="w-11/12 mx-auto py-10 space-y-5 hidden">
+    <section class="w-11/12 mx-auto py-10 space-y-5 ">
         <section id="pay-bill-form" class="form w-11/12 mx-auto py-5">
             <h1 class="text-xl font-bold">Pay Bill</h1>
 
@@ -304,17 +304,22 @@
                         <fieldset class="fieldset">
                             <label class="label text-neutral font-bold">Select To Pay</label>
                             <select id="pay" class="select input rounded-full bg-base-200">
-                                <option disabled selected>Select a Bank</option>
+                                <option disabled selected>Select Utility Provider</option>
                                 <option value="GAS">GAS</option>
                                 <option value="ELECTRICITY">ELECTRICITY</option>
                                 <option value="WIFI">WIFI</option>
                             </select>
                             <br>
                             <label class="label text-neutral font-bold">Biller Account Number</label>
-                            <input id="acc-number" maxlength="17" type="tel" inputmode="numeric" pattern="[0-9]{17}"
+                            <input id="biller-acc-number" maxlength="17" type="tel" inputmode="numeric" pattern="[0-9]{17}"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
                                 class="input rounded-full bg-base-200" placeholder="Enter 17 Digit Account Number" />
 
+                            <br>
+                            <label class="label text-neutral font-bold">Amount to Pay</label>
+                            <input id="pay-amount" type="tel" inputmode="numeric" pattern="[0-9]"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')" required class="input rounded-full bg-base-200"
+                                placeholder="Add Amount to pay" />
                             <br>
                             <label class="label text-neutral font-bold">Pin Number</label>
                             <input id="pay-bill-pin" maxlength="4" pattern="[0-9]{4}"
@@ -398,6 +403,7 @@
     <script src="./script/cashout.js"></script>
     <script src="./script/transfer.js"></script>
     <script src="./script/bonus.js"></script>
+    <script src="./script/paybill.js"></script>
     <script src="./script/transaction.js"></script>
 </body>
 

@@ -17,7 +17,7 @@ document.getElementById("transfer-btn").addEventListener("click", function () {
     const savedPin = localStorage.getItem("userPin");
     if (transferPin === savedPin) {
       alert(
-        `${transferAmount}$ Money transfer successfully to your ${userAccNum} at ${new Date()}`,
+        `${transferAmount}$ Money transfer successfully from your ${userAccNum} at ${new Date()}`,
       );
       totalBalance.innerText = newBalance;
     } else {
