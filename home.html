@@ -126,7 +126,7 @@
                             </select>
                             <br>
                             <label class="label text-neutral font-bold">Bank Account Number</label>
-                            <input id="acc-number" maxlength="17" type="tel" inputmode="numeric" pattern="[0-9]{11}"
+                            <input id="acc-number" maxlength="17" type="tel" inputmode="numeric" pattern="[0-9]{17}"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
                                 class="input rounded-full bg-base-200" placeholder="Enter 17 Digit Account Number" />
                             <br>
@@ -212,7 +212,7 @@
         </section>
     </section>
 
-    <section class="form w-11/12 mx-auto py-5 space-y-5">
+    <section class="form w-11/12 mx-auto py-5 space-y-5 hidden">
         <section id="get-bonus-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold">Get Bonus</h1>
 
@@ -226,6 +226,40 @@
                             <button id="get-bonus-btn" class="btn btn-primary mt-4 rounded-full">
                                 Get Bonus
                             </button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="w-11/12 mx-auto py-10 space-y-5 hidden">
+        <section id="pay-bill-form" class="form w-11/12 mx-auto py-5">
+            <h1 class="text-xl font-bold">Pay Bill</h1>
+    
+            <div class="pay-bill-form pt-5">
+                <div class="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-xl rounded-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label text-neutral font-bold">Select To Pay</label>
+                            <select id="pay" class="select input rounded-full bg-base-200">
+                                <option disabled selected>Select a Bank</option>
+                                <option value="GAS">GAS</option>
+                                <option value="ELECTRICITY">ELECTRICITY</option>
+                                <option value="WIFI">WIFI</option>
+                            </select>
+                            <br>
+                            <label class="label text-neutral font-bold">Biller Account Number</label>
+                            <input id="acc-number" maxlength="17" type="tel" inputmode="numeric" pattern="[0-9]{17}"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                                class="input rounded-full bg-base-200" placeholder="Enter 17 Digit Account Number" />
+                     
+                            <br>
+                            <label class="label text-neutral font-bold">Pin Number</label>
+                            <input id="pay-bill-pin" maxlength="4" pattern="[0-9]{4}"
+                                oninput="this.value=this.value.replace(/[^0-9]/g, '')" type="password" inputmode="numeric"
+                                required class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+                            <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
                         </fieldset>
                     </div>
                 </div>
