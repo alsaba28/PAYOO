@@ -26,7 +26,7 @@ document.getElementById("cash-out-btn").addEventListener("click", function () {
   const cashOutPin = getValueFromInput("cash-out-pin");
   const savedPin = localStorage.getItem("userPin");
   if (cashOutPin === savedPin) {
-    alert("Cash out successful");
+    alert(`${cashOutAmount}$ Cash out successful at ${new Date}`);
     totalBalance.innerText = newBalance;
   } else {
     alert("Pin not matched");
