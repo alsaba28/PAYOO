@@ -113,7 +113,7 @@
         <section id="latest-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold mb-3">Latest Payment</h1>
             <div class="space-y-5">
-                <button
+                <button id="latest-electricity-bill"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -126,7 +126,7 @@
                     </div>
 
                 </button>
-                <button
+                <button id="latest-bank-deposit"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -139,7 +139,7 @@
                     </div>
 
                 </button>
-                <button
+                <button id="latest-mobile-recharge"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -152,7 +152,7 @@
                     </div>
 
                 </button>
-                <button
+                <button id="latest-gas-bill"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -330,11 +330,11 @@
         </section>
     </section>
 
-    <section class="form w-11/12 mx-auto py-5 space-y-5 hidden">
+    <section class="form w-11/12 mx-auto py-5 space-y-5">
         <section id="transaction-form" class="w-11/12 mx-auto">
             <h1 class="text-xl font-bold mb-3">Transaction History</h1>
             <div class="space-y-5">
-                <button
+                <button id="history-electricity-bill"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -347,7 +347,7 @@
                     </div>
 
                 </button>
-                <button
+                <button id="history-bank-deposit"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -360,7 +360,7 @@
                     </div>
 
                 </button>
-                <button
+                <button id="history-mobile-recharge"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -373,7 +373,7 @@
                     </div>
 
                 </button>
-                <button
+                <button id="history-gas-bill"
                     class="btn btn-primary btn-ghost w-full justify-start h-auto p-4 rounded-xl bg-base-100 shadow-sm hover:bg-base-200">
 
                     <div class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center relative">
@@ -394,8 +394,10 @@
 
 
     <script src="./script/machine.js"></script>
+    <script src="./script/latest_history.js"></script>
     <script src="./script/addmoney.js"></script>
     <script src="./script/cashout.js"></script>
+    
 </body>
 
 </html>
