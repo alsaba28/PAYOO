@@ -6,7 +6,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
   localStorage.setItem("userPin", pin);
   if (contactNumber.length === 11 && pin.length === 4) {
     alert("Congratulation, Log in Successful");
-    window.location.assign("/home.html");
+    window.location.assign("../home.html");
   } else {
     alert(
       "Log in failed, Please, check your 11 digit phone number and 4 digit pin",
