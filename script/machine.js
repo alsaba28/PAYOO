@@ -20,8 +20,8 @@ function showOnly(id) {
     payBill.classList.add("hidden");
     transaction.classList.add("hidden");
 
-    document.getElementById(id).classList.remove("hidden");
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    // document.getElementById(id).classList.remove("hidden");
+    // document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 
     const selected = document.getElementById(id);
     selected.classList.remove("hidden")
